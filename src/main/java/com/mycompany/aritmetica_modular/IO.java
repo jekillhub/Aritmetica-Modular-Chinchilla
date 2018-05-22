@@ -15,10 +15,10 @@ public class IO {
         return this.tabla;
     }
     
-    public void mostrarTabla(){
-        for (int i=0; i< this.tabla.length;i++){
-            for (int j=0; j<this.tabla.length;i++){
-                System.out.print(this.tabla[i][j]+"\t");
+    public static void mostrarTabla(int[][] tabla){
+        for (int i=0; i< tabla.length;i++){
+            for (int j=0; j<tabla.length;i++){
+                System.out.print(tabla[i][j]+"\t");
             }
             System.out.println("");
         }

@@ -4,11 +4,13 @@ public class Calculo {
 
     public static int[][] sumaMatriz(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
                 int suma = i + j;
+                
                 if (suma < matriz.length) {
                     matriz[i][j] = suma;
-                } else if (suma >= matriz.length) {
+                    
+                } else if (suma > matriz.length) {
                     suma = suma - matriz.length;
                     matriz[i][j] = suma;
                 }
@@ -16,6 +18,7 @@ public class Calculo {
         }
         return matriz;
     }
+    
 
     public static int[][] mulMatriz(int[][] matriz) {
         for (int i = 0; i < matriz.length; i++) {
